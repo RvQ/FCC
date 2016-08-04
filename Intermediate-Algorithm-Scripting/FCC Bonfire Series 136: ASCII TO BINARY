@@ -1,0 +1,15 @@
+function asciiAgent(asciiString){
+	var result = [];
+		asciiArray = asciiString.split('');
+
+	asciiArray.forEach(function(asciiCode){
+		var decimal = asciiCode.charCodeAt();
+		var binary = decimal.toString(2)
+		result.push(binary)
+	});
+	return result.join(' ')
+}
+
+
+
+asciiAgent("Mida paganast siin küll toimub ma ei saa aru")
